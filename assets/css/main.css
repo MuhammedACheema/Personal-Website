@@ -42,6 +42,74 @@ footer, header, hgroup, menu, nav, section {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	}
 
+	.icon {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 87px; /* Adjust the size of the circle as needed */
+		height: 87px; /* Adjust the size of the circle as needed */
+		border-radius: 50%;
+		overflow: hidden; /* Ensures the image fits within the circle */
+		background: #fff; /* Add a background color to the circle */
+		top: 0px; /* Move the image up */
+		border: 2px solid #fff; /* Optional: Add a border to the circle */
+	}
+
+	.icon img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover; /* Ensures the image covers the circle without distortion */
+	}
+
+/* General Icon Styles */
+.icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.icons li {
+    margin: 0 10px;
+}
+
+.icons .icon {
+    font-size: 2em; /* Adjust the size as needed */
+    color: #999; /* Adjust the color as needed */
+    transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.icons .icon:hover {
+    color: #ddd; /* Adjust the hover color as needed */
+}
+
+ul.icons li a {
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    display: inline-block;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: center;
+    width: 2.25rem;
+}
+
+ul.icons li a:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+ul.icons li a:active {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+
+
+
+
 body {
 	line-height: 1;
 }
